@@ -21,6 +21,7 @@ public class MainFragment extends Fragment implements MainContract.View {
 
     private MainContract.Presenter presenter;
     private MainAdapter adapter;
+    private RecyclerView recyclerView;
 
     public static MainFragment newInstance() {
         return new MainFragment();
@@ -40,7 +41,7 @@ public class MainFragment extends Fragment implements MainContract.View {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.main_recycler_view);
+        recyclerView = (RecyclerView) view.findViewById(R.id.main_recycler_view);
         adapter = new MainAdapter();
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -50,5 +51,6 @@ public class MainFragment extends Fragment implements MainContract.View {
     @Override
     public void showPage(List<MainItem> page) {
         adapter.showPage(page);
+        recyclerView.scrollTo(0, 0);
     }
 }
