@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/description" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/arrow"
+        android:layout_toRightOf="@+id/picture"
+        android:includeFontPadding="false"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/arrow"
+        android:layout_toRightOf="@+id/picture"
+        android:includeFontPadding="false"
+        android:textColor="@color/colorBlack38"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@string/description"
+        android:src="@mipmap/ic_list" />
+
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/subtitle"
+        android:background="@color/colorLightGrey" />
+
+</RelativeLayout>

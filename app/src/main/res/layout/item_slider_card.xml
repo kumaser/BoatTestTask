@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="184dp"
+    android:layout_height="276dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/card_background">
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="120dp"
+        android:layout_height="104dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/description" />
+
+    <TextView
+        android:id="@+id/text_badge"
+        style="@style/textViewStyleCardBadge"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp" />
+
+    <ImageView
+        android:id="@+id/discount_badge"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/description" />
+
+    <ImageView
+        android:id="@+id/favorite"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/description" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/textViewStyleCardTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/picture"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="4dp" />
+
+    <RelativeLayout
+        android:id="@+id/price_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title">
+
+        <TextView
+            android:id="@+id/price"
+            style="@style/textViewStyle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/price_before_discount"
+            style="@style/textViewStyle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/price" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/benefit"
+        style="@style/textViewStyle9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price_block"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/button_basket"
+        style="@style/buttonOrange"
+        android:layout_width="160dp"
+        android:layout_height="36dp"
+        android:text="@string/in_basket" />
+
+</RelativeLayout>

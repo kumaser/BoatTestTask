@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Boat</string>
+    <string name="description">Описание изображения</string>
+    <string name="in_basket">В корзину</string>
+    <string name="new_label">new</string>
+    <string name="all">Все</string>
+    <string name="benefit_pattern">(выгода %1$s%2$s)</string>
+    <string name="before_discount_pattern">без карты %1$s</string>
+    <string name="personal_recommendations_label">Получайте персональные \nрекомендации по мере роста \nи развития Ваших малышей!</string>
+    <string name="boy">Мальчик</string>
+    <string name="girl">Девочка</string>
+    <string name="present_label">Поможем подобрать подарок \nребенку по вкусу</string>
+    <string name="pick_up">Подобрать</string>
+    <string name="label_main">Главная</string>
+    <string name="cart">Корзина</string>
+</resources>

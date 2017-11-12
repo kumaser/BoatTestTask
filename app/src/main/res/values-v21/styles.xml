@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="toolbarStyle">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:elevation">4dp</item>
+        <item name="titleTextColor">@color/colorBlack87</item>
+    </style>
+
+    <style name="textViewStyleCardTitle" parent="textViewStyleBlackTwo87">
+        <item name="android:textColor">@color/colorBlackTwo</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginLeft">12sp</item>
+        <item name="android:layout_marginRight">12sp</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="buttonDarkSkyBlue">
+        <item name="android:background">@drawable/button_dark_sky_blue</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">normal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.14</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="buttonMediumPink">
+        <item name="android:background">@drawable/button_mediun_pink</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">normal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.14</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+</resources>

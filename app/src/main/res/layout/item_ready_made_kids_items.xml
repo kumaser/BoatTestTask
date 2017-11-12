@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="302dp"
+    android:layout_height="224dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/card_background">
+
+    <ImageView
+        android:id="@+id/picture_left"
+        android:layout_width="90dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/description" />
+
+    <ImageView
+        android:id="@+id/picture_middle"
+        android:layout_width="90dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/picture_left"
+        android:contentDescription="@string/description" />
+
+    <ImageView
+        android:id="@+id/picture_right"
+        android:layout_width="90dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/picture_middle"
+        android:contentDescription="@string/description" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/textViewStyleCardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/picture_middle" />
+
+    <TextView
+        android:id="@+id/price"
+        style="@style/textViewStyle7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title" />
+
+    <Button
+        android:id="@+id/button_basket"
+        style="@style/buttonOrange"
+        android:layout_width="278dp"
+        android:layout_height="36dp"
+        android:text="@string/in_basket" />
+
+</RelativeLayout>
